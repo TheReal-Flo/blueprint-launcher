@@ -1,0 +1,15 @@
+div:has(>*[rel~="sponsored"]) {
+    display: none !important;
+}
+
+h3.sidebar-menu-heading~div.checkbox-outer {
+    display: none;
+}
+
+.checkbox-outer~.multiselect {
+    display: none;
+}
+
+.multiselect {
+    display: none;
+}

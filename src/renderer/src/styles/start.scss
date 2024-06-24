@@ -1,0 +1,50 @@
+.start-container {
+    width: 100vw;
+    height: 100vh;
+
+    .blur {
+        content: '';
+
+        z-index: 5;
+
+        background-color: rgba(255, 255, 255, 0.09);
+        -webkit-backdrop-filter: blur(1px);
+        backdrop-filter: blur(1px);
+
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+
+        top: 0;
+        left: 0;
+    }
+
+    .form {
+        position: absolute;
+        top: calc(50% - 100px);
+        left: calc(50% - 150px);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        box-shadow: 5px 5px 8px rgba(38, 38, 38, 0.75);
+
+        padding: 20px;
+
+        border-radius: 15px;
+
+        width: 300px;
+        z-index: 10;
+        background-color: #B3CAE5;
+
+        img {
+            width: 100%;
+            margin-bottom: 20px;
+
+            -webkit-filter: drop-shadow(2px 2px 3px #222);
+            filter: drop-shadow(2px 2px 3px #222);
+        }
+    }
+}
